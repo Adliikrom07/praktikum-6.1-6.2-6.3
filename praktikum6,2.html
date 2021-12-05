@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+#satu{
+    display: flex;
+    flex: 1;
+}
+#dua{
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    flex-grow: 1;
+    flex-direction: flex ;
+    align-items: stretch;
+
+}
+#tiga{
+    display: flex;
+    flex: 1;
+}
+#tiga > article{
+    flex: 1;
+    order: 0;
+    
+}
+#satu > nav{
+    flex: 0 0 20vw;
+}
+#satu > nav{
+    background: palevioletred;
+    color: black;
+    order: 0;
+}
+#tiga > aside{
+    background:rgb(70, 168, 248);
+    color: black;
+    order: 1;
+    flex: 0 0 20vw;
+
+}
+header,footer{
+    background: yellow;
+    color: black;
+    height: 20vh;
+}
+header,footer,article,nav,aside{
+    padding: 1em;
+}
+    </style>
+</head>
+<body>
+   <div id="satu">
+        <nav>Nav</nav>
+    <div id="dua">
+        <header>Header</header>
+        <div id="tiga">
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+        
+    </div>
+   
+</div>
+</body>
+</html>
